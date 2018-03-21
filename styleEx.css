@@ -1,0 +1,15 @@
+body{
+  background-color: lightblue;
+  text-align: center;
+}
+
+#canvas{
+  display: block;
+  margin: 45px  auto;
+  background-color: aliceblue;
+  border:2px black solid;
+}
+
+#instructions{
+  color: red;
+}
