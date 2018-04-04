@@ -105,15 +105,15 @@ function Collision(p, line)
 {
   if (p.pos.dy >= line.slope * p.pos.dx + line.yIntercept)
   {
-    p.point.color = "green";
+    p.point.color = "red";
+
+    // The bounce
     h.tan.angle += Math.PI;
     g.vel.sumVector(h.tan,h.rad);
   }
 
   if (p.pos.dy < line.slope * p.pos.dx + line.yIntercept)
   {
-    p.point.color = "red";
-    //h.tan.angle += Math.PI;
-    //g.vel.sumVector(h.tan,h.rad);
+    p.point.color = "green";
   }
 }
